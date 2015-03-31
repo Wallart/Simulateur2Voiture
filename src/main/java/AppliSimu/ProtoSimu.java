@@ -6,6 +6,7 @@ import java.awt.event.ActionListener;
 import javax.swing.Timer;
 
 import DomaineVoiture.Voiture;
+import DomaineRoute.Route;
 
 public class ProtoSimu {
 
@@ -14,6 +15,9 @@ public class ProtoSimu {
 	public static void main(String[] args) {
 
 		final Voiture maVoiture = new Voiture (100, 0, 10);
+        final Route maRoute = new Route();
+
+
 		IHMVoiture monTriangle = new IHMVoiture(maVoiture);
 		
 		Timer timerAvancer = new Timer(dureeUneSecondeEnMilliSecondes, new ActionListener() {
